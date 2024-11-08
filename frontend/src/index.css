@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  
+}
+
+.header {
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: white;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.label-checkbox {
+  font-size: 1.25rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.task {
+  margin: 15px 10px;
+  font-size: 1.25rem;
+  padding: 15px 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), 
+            -5px -5px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.task:hover {
+  background-color: #ccc;
+}
+
+.task-title {
+  font-weight: bold;
+  margin: 0px 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.task-list {
+  width: 50vw;
+  margin: 20px 0px;
+}
+
+.task-list-heading {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.no-elements {
+  border-radius: 16px;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 75px;
+  border: 2px solid grey;
+  color: gray;
+}
+
+.add-to-do-btn, .add-task-submit-btn {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+  background-color: #3498db;
+  border-radius: 12px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.add-to-do-btn:hover, .add-task-submit-btn:hover {
+  background-color: #2980b9;   
+  border-color: #2980b9;   
+}
+
+.add-to-do-btn:active, .add-task-submit-btn:active {
+  background-color: #1c6fa5;   
+  border-color: #1c6fa5;
+  transform: scale(0.98);      
+}
+
+.add-task input {
+  display: block;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.add-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.add-task div {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), 
+            -5px -5px 15px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  border-radius: 12px;
+}
+
+.add-task-heading {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.add-task label {
+  font-weight: 500;
+  display: block;
+  margin: 15px 0px 2px;
+}
+
+.add-task textarea {
+  border-radius: 8px;
+  padding: 5px;
+  display: block;
+}
+
+.add-task-submit-btn {
+  margin: 20px 10px 5px;
+  padding: 5px 10px;
+}
+
+.task-title-input {
+  width: 100%;
+  height: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.task-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+.task-details > div {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.task-details .task-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.task-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.task-details label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.task-details span {
+  font-size: 1rem;
+  color: #444;
+}
+
+.task-details span#status {
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin: 10px 5px;
+}
+
+.task-details span.completed {
+  background-color: #28a745;
+  color: white;
+}
+
+.task-details span.yet-to-do {
+  background-color: #dc3545;
+  color: white;
+}
+
+.task-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.update-btn {
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #007bff;
+}
+
+.update-btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: 2px solid #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+  border-color: #c82333;
+}
